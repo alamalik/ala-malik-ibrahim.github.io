@@ -8,6 +8,7 @@
     "docs:build": "npx vuepress build docs"
   },
   "devDependencies": {
-    "vuepress": "next"
+    "vuepress": "next",
+    "vuepress-theme-hope": "^2.0.0-rc.94"
   }
 }
