@@ -8,7 +8,8 @@
     "docs:build": "npx vuepress build docs"
   },
   "devDependencies": {
-    "vuepress": "next",
+    "@vuepress/bundler-vite": "^2.0.0-rc.24",
+    "vuepress": "^2.0.0-rc.24",
     "vuepress-theme-hope": "^2.0.0-rc.94"
   }
 }
