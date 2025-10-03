@@ -1,12 +1,20 @@
-module.exports = {
-  title: 'Ala Malik — Portfolio',
-  description: 'UI/UX focused software engineer',
-  themeConfig: {
-    nav: [
+import { defineUserConfig } from 'vuepress'
+import { viteBundler } from '@vuepress/bundler-vite'
+import { defaultTheme } from '@vuepress/theme-default'
+
+export default defineUserConfig({
+  lang: 'en-US',
+  title: 'Alaa Malik Portfolio',
+  description: 'UI/UX Designer & Frontend Developer',
+
+  theme: defaultTheme({
+    navbar: [
       { text: 'Home', link: '/' },
-      { text: 'Projects', link: '/projects/' },
-      { text: 'Skills', link: '/skills/' },
-      { text: 'Contact', link: '/contact/' }
-    ]
-  }
-}
+      { text: 'About Me', link: '/about.html' },
+      { text: 'Projects', link: '/projects.html' },
+      { text: 'Contact', link: '/contact.html' },
+    ],
+  }),
+
+  bundler: viteBundler(),
+})
