@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
-    "docs:build": "vuepress build docs"
+    "dev": "npx vuepress dev docs",
+    "build": "npx vuepress build docs",
+    "docs:build": "npx vuepress build docs"
   },
   "devDependencies": {
     "vuepress": "next"
