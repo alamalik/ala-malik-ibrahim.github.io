@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Build and Deploy VuePress
 
 on:
   push:
@@ -6,26 +6,26 @@ on:
       - main
 
 jobs:
-  deploy:
+  build-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: 20
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build
-        run: npm run build
+      - name: Build VuePress site
+        run: npm run docs:build   # or "npm run build" if you don’t add docs:build
 
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/.vuepress/dist
+          publish_dir: docs/.vuepress/dist
