@@ -1,17 +1,13 @@
 {
-  "name": "my-portfolio",
+  "name": "my-portfolio1",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "npx vuepress dev docs",
-    "build": "npx vuepress build docs",
-    "docs:build": "npx vuepress build docs"
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "^2.0.0-rc.24",
-    "@vuepress/theme-default": "^2.0.0-rc.112",
-    "sass-embedded": "^1.93.2",
-    "vuepress": "^2.0.0-rc.24",
-    "vuepress-theme-hope": "^2.0.0-rc.94"
+    "@vuepress/theme-default": "^1.9.10",
+    "vuepress": "next"
   }
 }
