@@ -1,14 +1,13 @@
-# Projects
+# 💼 My Projects
 
-## Stop Food Waste
-**Role:** Full-stack (frontend + backend)  
-**Tech:** HTML, Bootstrap, PHP, MySQL, Google Maps  
-**Short:** Web app to connect food donors with people in need.
+<div class="card">
+  <h3>Portfolio Website</h3>
+  <p>A responsive portfolio site showcasing my UI/UX work and coding projects.</p>
+  <a href="https://alamalikibrahim.github.io" target="_blank">🔗 Visit</a>
+</div>
 
----
-
-## Pet Shop Management System
-**Role:** Desktop app (Java + Derby)  
-**Short:** Manage pets, food, products, and orders.
-
-(You can add screenshots in `.vuepress/public/` and link them here.)
+<div class="card">
+  <h3>Design System</h3>
+  <p>A modern, reusable design system built with Figma and implemented in Vue.</p>
+  <a href="#" target="_blank">🔗 Learn More</a>
+</div>
