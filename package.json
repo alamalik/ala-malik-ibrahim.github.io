@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-  "dev": "vuepress dev docs",
-  "build": "npx vuepress build docs",
-  "deploy": "gh-pages -d docs/.vuepress/dist"
-
-
+    "dev": "vuepress dev docs",
+    "build": "npx vuepress build docs",
+    "deploy": "gh-pages -d docs/.vuepress/dist"
   },
   "devDependencies": {
-    "@vuepress/theme-default": "^1.9.10",
-    "vuepress": "next"
+    "@vuepress/theme-default": "^2.0.0-rc.112",
+    "vuepress": "^2.0.0-rc.24"
+  },
+  "dependencies": {
+    "@vuepress/bundler-vite": "^2.0.0-rc.24"
   }
 }
