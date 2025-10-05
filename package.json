@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+  "dev": "vuepress dev docs",
+  "build": "npx vuepress build docs",
+  "deploy": "gh-pages -d docs/.vuepress/dist"
+
+
   },
   "devDependencies": {
     "@vuepress/theme-default": "^1.9.10",
