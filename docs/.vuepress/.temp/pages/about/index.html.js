@@ -1,16 +1,3 @@
 import comp from "C:/Users/Jin-pS/Desktop/my_portfolio1/docs/.vuepress/.temp/pages/about/index.html.vue"
 const data = JSON.parse("{\"path\":\"/about/\",\"title\":\"About Me\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1759509109000,\"contributors\":[{\"name\":\"Alaa Malik\",\"username\":\"\",\"email\":\"ensw00822@student.su.edu.krd\",\"commits\":2}],\"changelog\":[{\"hash\":\"99cd4299e20e60da6231bdc538227772f124d653\",\"time\":1759509109000,\"email\":\"ensw00822@student.su.edu.krd\",\"author\":\"Alaa Malik\",\"message\":\"4 comment\"},{\"hash\":\"98932af32f7aff98caf1a382f951dd1963c9b350\",\"time\":1759506243000,\"email\":\"ensw00822@student.su.edu.krd\",\"author\":\"Alaa Malik\",\"message\":\"feat: add UI/UX portfolio design\"}]},\"filePathRelative\":\"about/README.md\"}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}
