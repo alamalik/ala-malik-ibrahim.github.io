@@ -1,94 +1,57 @@
-/* ---------- Global ---------- */
+/* ---------- Global Styles ---------- */
 :root {
-  --bg-gradient: linear-gradient(135deg, #0f0f10, #181b2a, #1f2240);
-  --text-color: #e4e7ef;
-  --accent: #8b5cf6;
-  --card-bg: rgba(255, 255, 255, 0.05);
-  --border-color: rgba(255, 255, 255, 0.1);
-  --hover-glow: 0 0 20px var(--accent);
+  --bg-gradient: linear-gradient(to right, #0e0e0f, #141621, #1a1d2e);
+  --text-color: #e6e6e6;
+  --accent: #4e9eff;
+  --card-bg: #1a1d2e;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
+body {
   background: var(--bg-gradient);
   color: var(--text-color);
-  font-family: 'Inter', 'Segoe UI', sans-serif;
-  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
 }
 
+/* ---------- Header ---------- */
+h1, h2, h3, h4 {
+  color: var(--accent);
+  margin-top: 1.5em;
+}
+
+/* ---------- Links ---------- */
 a {
   color: var(--accent);
   text-decoration: none;
-  transition: 0.3s;
 }
 
 a:hover {
-  text-shadow: var(--hover-glow);
+  text-decoration: underline;
 }
 
-/* ---------- Navbar ---------- */
-.navbar {
-  background: rgba(0, 0, 0, 0.3);
+/* ---------- Sections ---------- */
+.content__default {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(26, 29, 46, 0.75);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.4);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--border-color);
 }
 
-/* ---------- Home Page ---------- */
-.hero {
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #fff;
-}
-
-.hero p {
-  font-size: 1.3rem;
-  color: #cdd0e1;
-  margin-top: 15px;
-}
-
-.hero button {
-  background: var(--accent);
-  border: none;
-  padding: 12px 28px;
-  border-radius: 8px;
-  font-size: 1rem;
-  color: white;
-  margin-top: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.hero button:hover {
-  box-shadow: var(--hover-glow);
-  transform: translateY(-3px);
-}
-
-/* ---------- Card Styles ---------- */
-.card {
-  background: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: 20px;
-  margin: 20px;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--hover-glow);
+/* ---------- Lists ---------- */
+ul {
+  list-style-type: square;
+  margin-left: 20px;
 }
 
 /* ---------- Footer ---------- */
-.footer {
+footer {
   text-align: center;
-  padding: 30px;
-  border-top: 1px solid var(--border-color);
+  color: #aaa;
+  margin-top: 40px;
   font-size: 0.9rem;
-  opacity: 0.7;
 }
