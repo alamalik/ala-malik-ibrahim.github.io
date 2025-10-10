@@ -1,20 +1,18 @@
 import { defineUserConfig } from 'vuepress'
 import { defaultTheme } from '@vuepress/theme-default'
-import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
   lang: 'en-US',
-  title: 'Alaa Malik Portfolio',
-  description: 'UI/UX Designer & Frontend Developer',
-
+  title: 'My Portfolio',
+  description: 'Welcome to my site',
+  base: '/alamalikibrahimm.github.io/', // 👈 must match your repo name!
   theme: defaultTheme({
     navbar: [
       { text: 'Home', link: '/' },
-      { text: 'About', link: '/about.html' },
-      { text: 'Projects', link: '/projects.html' },
-      { text: 'Contact', link: '/contact.html' },
+      { text: 'About', link: '/about/' },
+      { text: 'Projects', link: '/projects/' },
+      { text: 'Skills', link: '/skills/' },
+      { text: 'Contact', link: '/contact/' },
     ],
   }),
-
-  bundler: viteBundler(),
 })
