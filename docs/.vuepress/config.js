@@ -4,15 +4,15 @@ import { defaultTheme } from '@vuepress/theme-default'
 export default defineUserConfig({
   lang: 'en-US',
   title: 'My Portfolio',
-  description: 'Welcome to my site',
-  base: '/alamalikibrahimm.github.io/', // 👈 must match your repo name!
+  description: 'Welcome to my personal site',
+  base: '/alamalikibrahimm.github.io/', // 👈 very important
   theme: defaultTheme({
+    logo: '/images/logo.png',
     navbar: [
       { text: 'Home', link: '/' },
-      { text: 'About', link: '/about/' },
-      { text: 'Projects', link: '/projects/' },
-      { text: 'Skills', link: '/skills/' },
-      { text: 'Contact', link: '/contact/' },
+      { text: 'About', link: '/about.html' },
+      { text: 'Projects', link: '/projects.html' },
+      { text: 'Contact', link: '/contact.html' },
     ],
   }),
 })
