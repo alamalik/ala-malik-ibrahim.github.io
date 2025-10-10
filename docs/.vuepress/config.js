@@ -5,7 +5,7 @@ export default defineUserConfig({
   lang: 'en-US',
   title: 'My Portfolio',
   description: 'Welcome to my personal site',
-  base: '/alamalikibrahimm.github.io/', // 👈 very important
+  base: '/alamalikibrahimm.github.io/',  // ✅ Correct base path
   theme: defaultTheme({
     logo: '/images/logo.png',
     navbar: [
