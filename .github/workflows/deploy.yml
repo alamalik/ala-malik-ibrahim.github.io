@@ -1,9 +1,9 @@
-name: Build and Deploy VuePress
+name: Deploy VuePress site
 
 on:
   push:
     branches:
-      - main
+      - main  # or master, if your default branch is master
 
 jobs:
   build-deploy:
@@ -15,8 +15,8 @@ jobs:
         with:
           node-version: 18
       - name: Install dependencies
-        run: npm install
-      - name: Build VuePress site
+        run: npm ci
+      - name: Build site
         run: npm run build
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
